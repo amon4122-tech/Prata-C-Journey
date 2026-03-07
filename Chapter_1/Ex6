@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main(void){
+    int toes = 10;
+    int toes2 = toes * 2;
+    int toes3 = toes * toes;
+    printf("Toes: %d\n", toes);
+    printf("Twice toes: %d\n", toes2);
+    printf("Square toes: %d\n", toes3);
+    return 0;
+}
