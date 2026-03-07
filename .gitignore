@@ -1,0 +1,16 @@
+# binaries
+*.exe
+*.out
+*.app
+
+# Obj file
+*.o
+*.obj
+
+# Logs and TEMPs
+log.txt
+*.log
+
+# IDE 
+.vscode/
+.idea/
