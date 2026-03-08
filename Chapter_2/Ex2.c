@@ -1,8 +1,7 @@
 #include <stdio.h>
 
-int code;
-
 int main(void){
+    int code;
     printf("Введите значение кода ASCII: ");
     scanf("%d", &code);
     printf("Это символ %c\n", code);
