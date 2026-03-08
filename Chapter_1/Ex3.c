@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int main(void){
     int age = 31;
     int days = 365 * age;
