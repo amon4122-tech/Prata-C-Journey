@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int main(void){
     int toes = 10;
     int toes2 = toes * 2;
