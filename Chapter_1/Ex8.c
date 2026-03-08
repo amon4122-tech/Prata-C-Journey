@@ -1,6 +1,8 @@
 #include <stdio.h>
+
 void one_three(void);
 void two(void);
+
 int main(void){
     printf("Starting now:\n");
     one_three();
