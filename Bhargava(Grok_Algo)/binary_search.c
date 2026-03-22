@@ -27,7 +27,7 @@ int binary_search(int arr[], int size, int target) {
         int mid = left + (right - left) / 2;
 
         if (arr[mid] == target) {
-            return mid; // Нашли!
+            return mid;
         }
 
         if (arr[mid] < target) {
