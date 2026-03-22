@@ -6,9 +6,9 @@ float molecular_count;
 float quarts;
 
 int main(void){
-    printf("Введите количество кварт: ");
+    printf("Input the number of quarts: ");
     scanf("%f", &quarts);
     molecular_count = (quarts * quarts_water)/molecular;
-    printf("Это %f молекул\n", molecular_count);
+    printf("This is %f molecules\n", molecular_count);
     return 0;
 }
