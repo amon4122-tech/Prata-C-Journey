@@ -1,11 +1,17 @@
 #include <stdio.h>
-int main(void){
-    printf("Введите ваш рост в дюймах: ");
+
+int main(void) {
     float inches;
+    char name[20];
+
+    printf("Введите ваш рост в дюймах: ");
     scanf("%f", &inches);
     printf("Введите ваше имя: ");
-    char name[20];
     scanf("%s", name);
-    printf("%s, ваш рост в футах: %.2f\n", name, inches * 0.0833333);
+
+    float feet = inches / 12.0;
+
+    printf("%s, ваш рост в футах: %.2f\n", name, feet);
+
     return 0;
 }
