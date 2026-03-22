@@ -1,3 +1,4 @@
+//Пример кода бинарного поиска на основе отсортированного массива из 10 элементов
 #include <stdio.h>
 
 int binary_search(int arr[], int size, int target);
