@@ -1,19 +1,17 @@
 #include <stdio.h>
 int main(void){
     
-    printf("Введите значение в чашках: ");
+    printf("Input the value in cups: ");
     float cups, pints, tablespoons, teaspoons, ounces;
-
+    
+    tablespoons = teaspoons * 3.0;
+    ounces = tablespoons * 2.0;
+    pints = cups * 2.0;
+    
     scanf("%f", &cups);
-
-    pints = cups / 2.0;             
-    ounces = cups * 8.0;             
-    tablespoons = cups * 16.0;      
-    teaspoons = tablespoons * 3.0;
-
-    printf("Это %f пинт\n", pints);
-    printf("Это %f унций\n", ounces);
-    printf("Это %f столовых ложек\n", tablespoons);
-    printf("Это %f чайных ложек\n", teaspoons);
+    printf("This is %f pints\n", pints);
+    printf("This is %f ounces\n", ounces);
+    printf("This is %f tablespoons\n", tablespoons);
+    printf("This is %f teaspoons\n", teaspoons);
     return 0;
 }
