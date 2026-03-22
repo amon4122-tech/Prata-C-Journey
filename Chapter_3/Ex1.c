@@ -5,6 +5,6 @@ int main(void){
     scanf("%s", name);
     printf("Введите вашу фамилию: ");
     scanf("%s", surname);
-    printf("Ваше имя и фамилия: %s %s\n", name, surname);
+    printf("Ваше фамилия и имя: %s %s\n", surname, name);
     return 0;
 }
