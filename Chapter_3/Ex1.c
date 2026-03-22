@@ -1,10 +1,10 @@
 #include <stdio.h>
 int main(void){
     char name[20], surname[20];
-    printf("Введите ваше имя: ");
+    printf("Input your name: ");
     scanf("%s", name);
-    printf("Введите вашу фамилию: ");
+    printf("Input your surname: ");
     scanf("%s", surname);
-    printf("Ваше фамилия и имя: %s %s\n", surname, name);
+    printf("Your surname and name: %s %s\n", surname, name);
     return 0;
 }
