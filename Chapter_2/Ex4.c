@@ -1,11 +1,12 @@
 #include <stdio.h>
 
+float number;
+
 int main(void){
-    float number;
-    printf("Введите значение с плавающей запятой: ");
+    printf("Input the floating-point number: ");
     scanf("%f", &number);
-    printf("Запись с фиксированной запятой: %f\n", number);
-    printf("Экспоненциальная форма записи: %e\n", number);
-    printf("Двоично-экспоненциальное представление: %a\n", number);
+    printf("Fixed-point notation: %f\n", number);
+    printf("Exponential notation: %e\n", number);
+    printf("Binary-exponential representation: %a\n", number);
     return 0;
 }
