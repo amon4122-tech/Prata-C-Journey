@@ -1,12 +1,12 @@
 #include <stdio.h>
 int main(void){
-    printf("Введите скорость загрузки в Мбит/с: ");
+    printf("Input the speed of the download in Mb/s: ");
     float speed;
     scanf("%f", &speed);
-    printf("Введите размер файла в МБ: ");
+    printf("Input the size of the file in MB: ");
     float size;
     scanf("%f", &size);
     float time = (size * 8 )/ speed;
-    printf("Время загрузки файла: %.2f секунд\n", time);
+    printf("The time of the file download: %.2f seconds\n", time);
     return 0;
 }
