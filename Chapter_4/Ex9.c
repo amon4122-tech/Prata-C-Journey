@@ -4,10 +4,15 @@ double Temp_F, Temp_C, Temp_K;
 void Temperature(double *Temp_F);
 
 int main(void){
-    printf("Enter the temperature value in Fahrenheit:");
-    scanf("%lf", &Temp_F);
-    printf("\n");
-    Temperature(&Temp_F);
+    int status;
+    printf("Enter the temperature value in Fahrenheit (or Q for exit):");
+    status = scanf("%lf", &Temp_F);
+    while (status == 1){
+        printf("\n");
+        Temperature(&Temp_F);
+        printf("Enter the new value in Fahrenheit (or Q for exit):");
+        status = scanf("%lf", &Temp_F);
+    }
     return 0;
 }
 void Temperature(double *Temp_F){
