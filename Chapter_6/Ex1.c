@@ -1,18 +1,28 @@
 #include <stdio.h>
-#include <ctype.h>
 
 int main (void){
-    char ch;
+    int ch;
     int space_count = 0;
-    int char_count = 0;
+    int newstr_count = 0;
+    int other_count = 0; 
 
+    printf("Enter text (or # for exit):\n");
+    
     while ((ch = getchar()) != '#'){
-        if (isspace(ch)) {
+        if (ch == ' ') {
             space_count++;
+        } 
+        else if (ch == '\n') {
+            newstr_count++;
+        } 
+        else {
+            other_count++;
         }
-        if (!isspace(ch)) 
-        char_count++;
     }
-    printf("Space count = %d. Char count = %d\n", space_count, char_count);
+
+    printf("Spaces: %d\n", space_count);
+    printf("New strings: %d\n", newstr_count);
+    printf("Other symbols: %d\n", other_count);
+
     return 0;
 }
