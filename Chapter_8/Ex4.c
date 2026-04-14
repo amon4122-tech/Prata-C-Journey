@@ -5,12 +5,12 @@ double harmonic (double, double);
 int main (void){
     double a,b;
     double harmonic_num;
-    printf("Enter two numbers for callculate of harmonic number:");
+    printf("Enter two numbers for calculate of harmonic number:");
     while (scanf("%lf %lf",&a, &b) == 2) {
         harmonic_num = harmonic(a, b);
         printf("Harmonic number of %g and %g = %.3lf", a, b, harmonic_num);
         putchar('\n');
-        printf("Enter next two numbers for callculate of harmonic number:\n");
+        printf("Enter next two numbers for calculate of harmonic number:\n");
     }
 }
 
