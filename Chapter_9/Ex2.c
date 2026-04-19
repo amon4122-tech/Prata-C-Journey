@@ -49,8 +49,8 @@ void copy_ptr(double * ar1, double * ar2, int n){
         *(ar1+i) = *(ar2+i);
     }
 }
-void copy_ptrs(double *start, double *ar2, double *end) {
-    while (ar2 < end) {
-        *start++ = *ar2++;
+void copy_ptrs(double *ar1, double *ar2, double *border) {
+    while (ar2 < border) {
+        *ar1++ = *ar2++;
     }
 }
