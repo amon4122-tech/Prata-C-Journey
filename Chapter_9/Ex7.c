@@ -25,6 +25,8 @@ for (int i = 0; i < ROWS; i++) {
         }
     }
     putchar('\n');
+
+    return 0;
 }
 
 void copy_arr(double ar1[], double ar2[], int n){
